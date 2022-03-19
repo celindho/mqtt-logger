@@ -1,0 +1,16 @@
+{
+  "name": "mqtt_logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:test": "node index.js --mqtt_host=192.168.1.173 --mqtt_topic_to_log=ruuvi/#,cmnd/badrumsgolv/TempMeasuredSet --logging_file=./mqtt.log"
+  },
+  "author": "Christian Lindholm <christian.lindholm@iki.fi>",
+  "license": "ISC",
+  "dependencies": {
+    "command-line-args": "^5.2.1",
+    "mqtt": "^4.3.7",
+    "winston": "^3.6.0"
+  }
+}

@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch Program",
+        "skipFiles": ["<node_internals>/**"],
+        "program": "${workspaceFolder}/index.js",
+        "env": { "useDummyData": "true" },
+        "args": [
+          "--mqtt_host=192.168.1.173",
+          "--mqtt_topic_to_log=ruuvi_test",
+          "--logging_file=./mqtt.log"
+        ]
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug MQTT",
+        "skipFiles": ["<node_internals>/**"],
+        "program": "${workspaceFolder}/mqtt_test.js"
+      }
+    ]
+  }
+  
