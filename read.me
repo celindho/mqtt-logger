@@ -1,0 +1,6 @@
+Build the docker image using
+> docker build -t mqtt-logger:latest .
+
+> docker build -t celindho/mqtt-logger:latest .
+> cat docker-password.txt | docker login --username celindho --password-stdin
+> docker push celindho/mqtt-logger:latest
